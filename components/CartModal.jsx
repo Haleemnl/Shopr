@@ -114,6 +114,7 @@ export default function CartModal({ isOpen, onClose }) {
                         total_amount: totalPrice,
                         tx_ref: response.tx_ref,
                         transaction_id: response.transaction_id,
+                        user_id: user.id,
                         orders: JSON.stringify(items.map(item => ({
                             id: item.id,
                             name: item.name,

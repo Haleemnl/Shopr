@@ -44,6 +44,7 @@ export async function upsertUserProfile() {
                 returning: 'representation'
             });
 
+
         if (error) {
             console.error('Error updating profile:', error);
             return { success: false, error: error.message };

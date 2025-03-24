@@ -19,6 +19,7 @@ const Orders = () => {
                 let { data: orders, error } = await supabase
                     .from('orders')
                     .select('*')
+                    .eq('user_id', user?.id);
                 if (error) {
                     throw error
                 }
@@ -72,7 +73,7 @@ const Orders = () => {
         return () => {
             supabase.removeChannel(channel)
         }
-    }, [])
+    }, [user, supabase])
 
 
     // Function to parse the JSON string in orders field
