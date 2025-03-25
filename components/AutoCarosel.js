@@ -80,7 +80,7 @@ export function AutoCarosel() {
 
                                             <div className="">
                                                 <img src={image.img2} alt="" className="h-40 md:h-52 object-contain" />
-                                                <p className="text-center">{image.text2}</p>
+                                                <p className="text-center font-bold">{image.text2}</p>
                                             </div>
 
                                         </div>
