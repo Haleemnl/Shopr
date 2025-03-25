@@ -104,8 +104,11 @@ const Header = ({ onSuccess }) => {
                             type="text"
                             placeholder="Search..."
                             className="w-full rounded-lg border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent "
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onKeyDown={handleSearch}
                         />
-                        <Search className="absolute cursor-pointer right-3 top-2.5 text-gray-500 h-5 w-5" />
+                        <Search className="absolute cursor-pointer right-3 top-2.5 text-gray-500 h-5 w-5" onClick={handleSearch} />
                     </div>
 
                     {/* Mobile navigation items */}

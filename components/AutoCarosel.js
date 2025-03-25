@@ -57,14 +57,14 @@ export function AutoCarosel() {
             <CarouselContent>
                 {images.map((image, index) => (
                     <CarouselItem key={index}>
-                        <div className='w-full'>
-                            <Card className='overflow-hidden'>
-                                <CardContent className="p-0 w-full">
-                                    <div className="w-full flex flex-col md:flex-row items-center gap-2 justify-between min-h-44 rounded-b-2xl bg-gradient-to-r from-purple-700 to-fuchsia-400 text-white p-5">
+                        <div className='w-full mb-3 '>
+                            <Card className=' p-0 overflow-hidden '>
+                                <CardContent className="p-0 w-[99%] mx-auto">
+                                    <div className="w-full flex flex-col md:flex-row items-center gap-2 justify-between  rounded-b-2xl bg-gradient-to-r from-purple-700 to-fuchsia-400 text-white p-5 h-[400px]">
 
                                         <div className="  w-[90%] mx-auto p-5">
 
-                                            {/* <div className="h-4 w-4 rounded-full animate-pulse bg-gradient-to-r from-red-700 to-pink-400 absolute right-20 top-4"></div> */}
+
                                             <p className="font-bold text-3xl">{image.text}</p>
 
 
