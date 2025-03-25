@@ -75,7 +75,7 @@ export function AutoCarosel() {
                                         <div className="flex  items-center justify-center  w-full  overflow-hidden">
                                             <div>
                                                 <img src={image.img1} alt="" className="h-40 md:h-52 object-contain" />
-                                                <p className="text-center">  {image.text1}</p>
+                                                <p className="text-center font-bold">  {image.text1}</p>
                                             </div>
 
                                             <div className="">
